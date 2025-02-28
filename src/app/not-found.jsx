@@ -1,10 +1,10 @@
-"use client"
+
 
 import Link from "next/link";
 // import { useRouter } from "next/router";
 // import React, { useEffect } from "react";
 
-const error = () => {
+// top level
   // const router = useRouter();
 
   // useEffect(() => {
@@ -14,6 +14,8 @@ const error = () => {
 
   //   return () => clearTimeout(timer);
   // }, []);
+
+const NotFound = () => {
   return (
     <div className=" flex flex-col items-center justify-center mt-60 mb-40">
       <h1 className=" font-bold font-title text-blue-600 text-9xl">404</h1>
@@ -32,4 +34,4 @@ const error = () => {
   );
 };
 
-export default error;
+export default NotFound;

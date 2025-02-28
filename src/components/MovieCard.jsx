@@ -4,7 +4,7 @@ import Link from "next/link";
 const MovieCard = ({ movie }) => {
   return (
     <Link href={`/movie/${movie.id}`}>
-      <div className=" bg-slate-400 shadow-sm rounded-md cursor-pointer h-[450]">
+      <div className=" bg-slate-400 shadow-sm rounded-md cursor-pointer md:h-[450]">
         <Image
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           width={700}

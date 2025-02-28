@@ -20,7 +20,7 @@ const page = async ({ params }) => {
 
   const movie = await res.json();
   return (
-    <div className=" container mx-auto max-w-4xl pt-6">
+    <div className=" container mx-auto max-w-4xl pt-6 mb-72 sm:mb-96 lg:mb-0">
       <Meta title={movie.title} />
       <div className=" px-3">
         <Image
