@@ -1,21 +1,20 @@
-
+"use client";
 
 import Link from "next/link";
-// import { useRouter } from "next/router";
-// import React, { useEffect } from "react";
-
-// top level
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     router.push("/");
-  //   }, 5000);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
+import { useRouter } from "next/navigation";
+import React, { useEffect } from "react";
 
 const NotFound = () => {
+  const router = useRouter(); // Moved inside component body
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push("/");
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [router]);
+
   return (
     <div className=" flex flex-col items-center justify-center mt-60 mb-40">
       <h1 className=" font-bold font-title text-blue-600 text-9xl">404</h1>
